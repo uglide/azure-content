@@ -48,7 +48,7 @@ It is not supported to have multiple Azure AD Connect sync servers connected to 
 
 Many organizations have environments with multiple on-premises Active Directory forests. There are various reasons for having more than one on-premises Active Directory forest. Typical examples are designs with account-resource forests and as a result after a merger or acquisition.
 
-When you have multiple forests, all forests must be reachable by single Azure AD Connect sync server. You do not have to join the server to a domain. The server can be placed in a network DMZ if necessary to reach all forest.
+When you have multiple forests, all forests must be reachable by single Azure AD Connect sync server. The server must be joined to one of the domains. The server can be placed in a network DMZ if necessary to reach all forest.
 
 The Azure AD Connect installation wizard offers several options to consolidate users represented in multiple forests. The goal is that a user is only represented once in Azure AD. There are some common topologies you can configure in the custom installation path in the installation wizard. Select the corresponding option representing your topology on the page **Uniquely identifying your users**. The consolidation is only configured for users. Duplicated groups are not consolidated with the default configuration.
 
