@@ -126,7 +126,7 @@ Con of deploying from a cloud-based source control service is:
 
 - Some knowledge of the respective SCM service required.
 
-###<a name="vsts"></a>How to deploy continuously from a cloud-based source control service
+### <a name="vsts"></a>How to deploy continuously from a cloud-based source control service
 In the [Azure Portal](https://portal.azure.com), you can configure continuous deployment from GitHub, Bitbucket, and Visual Studio Team Services.
 
 * [Continous Deployment to Azure App Service](app-service-continous-deployment.md). 
@@ -145,7 +145,7 @@ Con of deploying from local Git is:
 - Some knowledge of the respective SCM system required.
 - No turn-key solutions for continuous deployment. 
 
-###<a name="vsts"></a>How to deploy from local Git
+### <a name="vsts"></a>How to deploy from local Git
 In the [Azure Portal](https://portal.azure.com), you can configure local Git deployment.
 
 * [Local Git Deployment to Azure App Service](app-service-deploy-local-git.md). 
@@ -178,7 +178,7 @@ query the backend SQL database, live-debug the Azure app, and much more.
 - Integrated Azure explorer.
 - Diff-only deployment. 
 
-###<a name="vs"></a>How to deploy from Visual Studio directly
+### <a name="vs"></a>How to deploy from Visual Studio directly
 
 * [Get started with Azure and ASP.NET](web-sites-dotnet-get-started.md). How to create and deploy a simple ASP.NET MVC web project by 
 using Visual Studio and Web Deploy.
@@ -194,7 +194,7 @@ features have been added since the tutorial was written, but notes added later e
 Explains how to deploy an ASP.NET web project in Visual Studio, using the Git plug-in to commit the code to Git and connecting Azure to 
 the Git repository. Starting in Visual Studio 2013, Git support is built-in and doesn't require installation of a plug-in.
 
-###<a name="aztk"></a>How to deploy using the Azure Toolkits for Eclipse and IntelliJ IDEA
+### <a name="aztk"></a>How to deploy using the Azure Toolkits for Eclipse and IntelliJ IDEA
 
 Microsoft makes it possible to deploy Web Apps to Azure directly from Eclipse and IntelliJ via the [Azure Toolkit for Eclipse](../azure-toolkit-for-eclipse.md) and [Azure Toolkit for IntelliJ](../azure-toolkit-for-intellij.md). The following tutorials illustrate the steps that are involved in deploying simple a "Hello" world Web App to Azure using either IDE:
 
@@ -214,7 +214,7 @@ Microsoft makes it possible to deploy Web Apps to Azure directly from Eclipse an
  
 Another deployment option is to use a cloud-based service such as [Octopus Deploy](http://en.wikipedia.org/wiki/Octopus_Deploy). For more information, see [Deploy ASP.NET applications to Azure Web Sites](https://octopusdeploy.com/blog/deploy-aspnet-applications-to-azure-websites).
 
-###<a name="msbuild"></a>Automate deployment with MSBuild
+### <a name="msbuild"></a>Automate deployment with MSBuild
 
 If you use the [Visual Studio IDE](#vs) for development, you can use [MSBuild](http://msbuildbook.com/) to automate anything you can do in your IDE. You can configure MSBuild to use either [Web Deploy](#webdeploy) or [FTP/FTPS](#ftp) to copy files. Web Deploy can also automate many other deployment-related tasks, such as deploying databases.
 
@@ -223,7 +223,7 @@ For more information about command-line deployment using MSBuild, see the follow
 * [ASP.NET Web Deployment using Visual Studio: Command Line Deployment](http://www.asp.net/mvc/tutorials/deployment/visual-studio-web-deployment/command-line-deployment). Tenth in a series of tutorials about deployment to Azure using Visual Studio. Shows how to use the command line to deploy after setting up publish profiles in Visual Studio.
 * [Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build](http://msbuildbook.com/). Hard-copy book that includes chapters on how to use MSBuild for deployment.
 
-###<a name="powershell"></a>Automate deployment with Windows PowerShell
+### <a name="powershell"></a>Automate deployment with Windows PowerShell
 
 You can perform MSBuild or FTP deployment functions from [Windows PowerShell](http://msdn.microsoft.com/library/dd835506.aspx). If you do that, you can also use a collection of Windows PowerShell cmdlets that make the Azure REST management API easy to call.
 
@@ -243,7 +243,7 @@ For more information, see the following resource:
 
 * [Automating everything with the Azure Management Libraries and .NET](http://www.hanselman.com/blog/PennyPinchingInTheCloudAutomatingEverythingWithTheWindowsAzureManagementLibrariesAndNET.aspx). Introduction to the .NET management API and links to more documentation.
 
-###<a name="cli"></a>Deploy from Azure Command-Line Interface (Azure CLI)
+### <a name="cli"></a>Deploy from Azure Command-Line Interface (Azure CLI)
 
 You can use the command line in Windows, Mac or Linux machines to deploy by using FTP. If you do that, you can also access the Azure REST management API using the Azure CLI.
 
@@ -251,7 +251,7 @@ For more information, see the following resource:
 
 * [Azure Command line tools](/downloads/#cmd-line-tools). Portal page in Azure.com for command line tool information.
 
-###<a name="webdeploy"></a>Deploy from Web Deploy command line
+### <a name="webdeploy"></a>Deploy from Web Deploy command line
 
 [Web Deploy](http://www.iis.net/downloads/microsoft/web-deploy) is Microsoft software for deployment to IIS that not only provides intelligent file sync features but also can perform or coordinate many other deployment-related tasks that can't be automated when you use FTP. For example, Web Deploy can deploy a new database or database updates along with your web app. Web Deploy can also minimize the time required to update an existing site since it can intelligently copy only changed files. Microsoft Visual Studio and Team Foundation Server have support for Web Deploy built-in, but you can also use Web Deploy directly from the command line to automate deployment. Web Deploy commands are very powerful but the learning curve can be steep.
 
@@ -262,7 +262,7 @@ For more information, see the following resource:
 * [Using Web Deploy](http://www.iis.net/learn/publish/using-web-deploy). Official documentation on the Microsoft IIS.NET site. Also dated but a good place to start.
 * [ASP.NET Web Deployment using Visual Studio: Command Line Deployment](http://www.asp.net/mvc/tutorials/deployment/visual-studio-web-deployment/command-line-deployment). MSBuild is the build engine used by Visual Studio, and it can also be used from the command line to deploy web applications to Web Apps. This tutorial is part of a series that is mainly about Visual Studio deployment.
 
-##<a name="nextsteps"></a>Next Steps
+## <a name="nextsteps"></a>Next Steps
 
 In some scenarios you might want to be able to easily switch back and forth between a staging and a production version of your app. For more information, see [Staged Deployment on Web Apps](web-sites-staged-publishing.md).
 
